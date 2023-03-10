@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.space{
+    width: 100%;
+    height: 10px;
+    background-color:rgb(35,35 , 35);
+}
+
+/*=====HEADER=====*/
+.header{
+    position: relative;
+    width: 100%;
+    height: 97vh;
+    background: url(./images-20230310T053946Z-001/images/IN-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) no-repeat center center/cover;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+
+.home-top{
+    position: relative;
+    z-index: 2;
+}
+.navbar-brand img{
+    width: 10rem;
+    height: 50px;
+}
+
+
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+
+.heading{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.home-content h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.enter-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.email-box{
+    flex: 1;
+    max-width: 400px;
+    background: rgba(0, 0, 0, .7);
+    border: 1px solid gray;
+}
+
+/*=====SECTION 1======*/
+.section1{
+    background-color: black;
+}
+.section1-left{
+    padding-top: 3rem;
+}
+.section1-right{
+    /* padding-top: 3rem; */
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    
+   
+}
+.section1-right .section1-img{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+}
+
+.section1-right .section1-video{
+    width: 75%;
+    margin-left: 14%;
+    margin-top: 12%;
+}
+
+
+/*======SECTION 2======*/
+.section2{
+    background-color: black;
+}
+.section2-left{
+    position: relative;
+    width: 100%;
+
+}
+
+.section2-left .download{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+    width: 70%;
+    
+    border: 1px solid white;
+    text-align: left;
+    border-radius: 10px;
+}
+.section2-left .download img{
+    width:20%;
+}
+.section2-left .download .download-info p{
+    color: blue;
+}
+
+
+/*SECTION 3*/
+.section3{
+    background-color: black;
+}
+.section3-left{
+    /* padding-top: 3rem; */
+}
+.section3-right{
+    padding-top: 5rem;
+    /* padding-bottom: 3rem !important; */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* height: 500px; */
+   
+}
+.section3-right .section3-img{
+    position: absolute;
+    width: 100%;
+height: 100%;
+}
+
+.section3-right .section3-video{
+    width: 62%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+
+/*=====SECTION 5======*/
+.section5{
+    background-color: black;
+}
+
+/* ======FOOTER ======*/
+.footer{
+    background-color: black;
+    color: darkgrey;
+}
+.footer-list{
+
+}
+.footer-list ul li{
+    list-style: none;
+}
+.footer-list ul li a{
+    color: white;
+    
+}
+.footer-list ul li a:hover{
+    color: gray;
+    
+}
+
+
+/*=====RESPONSIVE=====*/
+
+@media (width<576px) {
+    .navbar-brand img{
+        width: 80px;
+        height: 30px;
+    }
+
+
+    .heading{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    
+    .home-content h3{
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .enter-email{
+        flex-direction: column;
+    }
+
+    .section3-right{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+}
